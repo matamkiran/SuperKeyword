@@ -10,12 +10,14 @@ public class Child extends Parent {
 		System.out.println("Child plays cricket very Well");
 	}
 	void childProperty() {
+		// invoking parent class method
 		super.property();
 	}
 	
-	
 	void accessParent() {
+		// invoking parent class variable 
 		System.out.println("Bank balance :"+super.bankBalance);
+		this.bankBalance=super.bankBalance;
 	}
 
 }
